@@ -61,7 +61,7 @@ namespace ServiceClientRepro
         {
             var credentials = new EnvironmentCredential();
 
-            var context = new TokenRequestContext(scopes: new[] { "DYNAMICS URL.default" });
+            var context = new TokenRequestContext(scopes: new[] { "DYNAMICS URL/.default" });
 
             var token = credentials.GetToken(context);
 
